@@ -1,0 +1,328 @@
+body
+{
+    background-color: #fff8ef;
+}
+
+header h2
+{
+    font-size: 20px;
+    font-family:fantasy;
+    color: rgb(65, 41, 7);
+    margin-bottom: 10px;
+}
+
+.rotate-min10deg {
+    transform: rotate(-10deg);
+}
+
+.rotate-10deg {
+    transform: rotate(10deg);
+}
+
+#header-bar 
+{
+    width:90%;
+    background-color:rgb(235, 157, 40);
+    height: 10px;
+    margin: 0 auto;
+}
+
+#characterSelection
+{
+    width: 100%;
+    padding: 80px 0 140px; 
+    margin: 0px;
+    border-radius: 10px;
+    background-image: url('images/backgroundkarakter.jpg');
+    background-size: 100%;
+}
+
+#characterSelection h2
+{
+    font-size: 30px;
+}
+
+#characterSelection p
+{
+    font-size: 20px;
+}
+
+#characterSelection input
+{
+    border: 3px solid rgb(98, 65, 15);
+}
+
+#music img
+{
+    align-items: right;
+}
+
+img[src="images/money.png"] 
+{
+    margin-left: 100px; 
+}
+
+progress 
+{
+    border: 1px solid black;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(255, 177, 61); 
+}
+
+progress::-webkit-progress-bar 
+{
+    background-color: #ffffff; 
+}
+
+#task button
+{
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0px 10px 0px;
+}
+
+#playerStatus
+{
+    margin-left: 130px;
+}
+
+#map {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#map .flex {
+    display: flex;
+    justify-content: center; /* Posisikan elemen secara horizontal */
+    align-items: center; /* Posisikan elemen secara vertikal */
+}
+
+#map img {
+    width: 200px; /* Sesuaikan ukuran gambar */
+    height: auto;
+}
+
+#home img
+{
+    width: 300px;
+    margin-right: 150px;
+}
+
+#lotte img
+{
+    width: 250px;
+    margin-left: 100px;
+}
+
+#namsan {
+    position: absolute;
+    top: 150px; /* sesuaikan vertikalnya */
+    left: 50%; /* tempatkan di tengah */
+    transform: translateX(-40%); /* geser agar benar-benar center */
+}
+
+#namsan img {
+    width: 200px;
+    height: auto;
+}
+
+#hongdae img
+{
+    width: 350px;
+    margin-top: 140px;
+}
+
+#palace img
+{
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 140px;
+}
+
+.center-screen 
+{
+    animation: 
+        typing 3s steps(15, end),
+        colorChange 5s infinite;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.center-screen button
+{
+    width: 200px;
+    padding: 6px;
+    margin-top: 30px;
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+.task-area{
+    width: 320px;
+    height: 400px;
+    margin: 10px auto;
+    background-color:rgb(255, 255, 255);
+    padding: 30px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.task-area button{
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    background-color:rgb(171, 179, 255);
+    color:rgb(71, 71, 71);
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.task-area button:hover {
+    background-color:rgb(255, 214, 89);
+    transform: scale(1.05);
+}
+
+#gameOverOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.game-over-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.game-over-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d90429;
+}
+
+.game-over-box button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2b2d42;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.game-over-box button:hover {
+    background-color: #8d99ae;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 176, 176);
+    }
+    50% {
+        color: rgb(255, 236, 200);
+    }
+    100% {
+        color: rgb(255, 176, 176);
+    }
+}
+
+#map
+{
+    background-image: url('images/map.jpeg');
+    background-size: cover;
+    width: 950px;
+}
+
+#characterImageDisplay 
+{
+    width: 100px;
+}
+
+#bungkus {
+    background-color: #fff5e1;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .loader-container {
+    text-align: center;
+  }
+  
+  .emoji {
+    font-size: 80px;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .text {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff6f00;
+  }
+  
+  .dot {
+    animation: dotFlash 1.5s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes dotFlash {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .funny-msg {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #777;
+  }
